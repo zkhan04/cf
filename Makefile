@@ -15,4 +15,4 @@ clean:
 	rm -f $(TARGET)
 
 cleanall:
-	find . -type f ! \( -name "*.cpp" -o -name "Makefile" \) -delete
+	find . -maxdepth 1 -type f ! \( -name "*.cpp" -o -name "Makefile" -o -name ".gitignore" -o -name "README.md" \) -delete
